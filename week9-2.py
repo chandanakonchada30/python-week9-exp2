@@ -1,0 +1,10 @@
+#24331A05E2
+# Implementing seek(), tell(), and flush()
+f=open("dummy.txt","w+")
+f.write("Hello, World!")
+f.flush()
+f.seek(0)
+print(f.read())
+f.seek(5)
+print("position:",f.tell(),"text:",f.read())
+f.close()
